@@ -10,18 +10,27 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="card">
-      <div class="img-container">
-        <img src="home.jpg" alt="picture of home" />
+      <div class="card__header">
+        <div class="card__header--bgImg"></div>
       </div>
-      <p class="paragraph">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a
-        exercitationem, tempora possimus omnis explicabo veniam commodi. Quia
-        odit numquam dicta doloremque, magnam magni amet distinctio eveniet
-        velit esse deserunt.
-      </p>
+      <div class="container">
+        <div class="card__body">
+          <p class="paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae a exercitationem, tempora possimus omnis explicabo
+            veniam commodi. Quia odit numquam dicta doloremque, magnam magni
+            amet distinctio eveniet velit esse deserunt.
+          </p>
+        </div>
+        <div class="card__footer">
+          <button class="btn btn__primary">Details</button>
+          <button class="btn btn__secondary">Contact Seller</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
