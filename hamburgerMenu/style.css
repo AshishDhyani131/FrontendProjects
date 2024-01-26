@@ -1,0 +1,43 @@
+#toggle[type="checkbox"] {
+  visibility: hidden;
+}
+#toggle[type="checkbox"] + label,
+#toggle[type="checkbox"] + label::before,
+#toggle[type="checkbox"] + label::after {
+  width: 30px;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+#toggle[type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+}
+#toggle[type="checkbox"] + label::before,
+#toggle[type="checkbox"] + label::after {
+  content: "";
+  position: absolute;
+  left: -2.1px;
+  transition: all 200ms ease-in-out;
+}
+#toggle[type="checkbox"]:checked + label,
+#toggle[type="checkbox"]:checked + label::after,
+#toggle[type="checkbox"]:checked + label::before {
+  border: 3px solid red;
+}
+#toggle[type="checkbox"] + label::before {
+  transform-origin: center;
+  transform: translateY(-10px);
+}
+#toggle[type="checkbox"] + label::after {
+  transform: translateY(5px);
+}
+#toggle[type="checkbox"]:checked + label {
+  border: hidden;
+}
+#toggle[type="checkbox"]:checked + label::after {
+  rotate: 45deg;
+  transform: translateX(-8px);
+}
+#toggle[type="checkbox"]:checked + label::before {
+  rotate: -45deg;
+}
