@@ -18,7 +18,7 @@ function RightNav() {
           />
         </svg>
       </button>
-      <button className="relative rounded-full p-2 hover:bg-neutral-300 duration-75 after:content-['1'] after:absolute after:-top-1 after:right-1 after:text-xs after:bg-red-700 after:p-1  after:rounded-full">
+      <button className="relative rounded-full p-2 hover:bg-neutral-300 duration-75 after:content-['1'] after:absolute after:-top-1 after:-right-[1px] after:text-xs after:bg-red-700 after:p-1 after:px-2  after:rounded-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
