@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+input,
+select,
+button {
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+input,
+select {
+  padding: 0.25rem;
+}
+
+.rotateY {
+  transform: rotateY(180deg);
+}
+.rotate0 {
+  transform: rotateY(0);
+}
+
+.transformStyle {
+  transform-style: preserve-3d;
+}
+.backfaceVisiblity {
+  backface-visibility: hidden;
+}
+.columnTemplate {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
